@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom'
 import Home from '../page/home'
 import Autor from '../page/autor'
+import Editora from '../page/editora'
 
 class Main extends Component {
     render() {
@@ -10,8 +11,8 @@ class Main extends Component {
                 <Switch>
                     <Route exact path='/' component={Home} />
                     <Route path='/autores' component={Autor} />
-                    {/* <Route path='/editoras' component={Roster} />
-                <Route path='/livros' component={Schedule} /> */}
+                    <Route path='/editoras' component={Editora} />
+                    {/* <Route path='/livros' component={Schedule} /> */}
                 </Switch>
             </main>
         );
